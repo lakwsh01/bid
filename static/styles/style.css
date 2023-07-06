@@ -1,0 +1,99 @@
+@import url('./animation/circular_progress_bar.css');
+@import url('./content/text.css');
+@import url('./general/border.css');
+@import url('./content/navbar.css');
+@import url('./content/navbar.css');
+
+.wrapper.expanded {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  .expanded {
+    flex-grow: 1;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.wrapper.float {
+  position: absolute;
+  text-align: center;
+  left: calc(50% - 75px);
+  top: calc(45%);
+  width: 150px;
+}
+
+/* @keyframes circle {
+  from {
+    width: 0px;
+    height: 0px;
+    background-color: red;
+  }
+  to {
+    width: 150px;
+    height: 150px;
+  }
+} */
+
+@keyframes circle {
+  from {
+    border: 20px solid radial-gradient(#e66465, #9198e5);
+  }
+  to {
+    border: 20px solid radial-gradient(#e66465, #9198e5);
+  }
+}
+
+@keyframes circle-mask {
+  from {
+    width: 0px;
+    height: 0px;
+    left: calc(50% - 0px);
+  }
+  to {
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.circle {
+  opacity: 1;
+  border-radius: 100%;
+}
+.circle.main {
+  width: 150px;
+  height: 150px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* background-color: green; */
+}
+.circle.mask {
+  display: none;
+  width: 140px;
+  height: 140px;
+  left: calc(50% - 70px);
+  position: absolute;
+  /* display: flex; */
+  justify-items: center;
+  opacity: 1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  background-color: white;
+}
+
+.footer {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #eee;
+  display: inline-flex;
+  .text {
+    margin: auto;
+    font-size: 12px;
+    color: #999;
+  }
+}

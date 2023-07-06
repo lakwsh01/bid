@@ -1,0 +1,6 @@
+/* bottom border */
+.bd-bottom {
+  border-bottom: var(--bd-thickness, 2.5px) var(--bd-style, solid)
+    var(--bd-color, whitesmoke);
+  margin-bottom: 12px;
+}

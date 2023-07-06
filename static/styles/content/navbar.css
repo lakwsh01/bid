@@ -1,0 +1,10 @@
+.navbar.fixed {
+  height: 50px;
+  width: 100%;
+  padding-left: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: 700;
+}

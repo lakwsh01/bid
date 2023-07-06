@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >0.7.0 <0.9.0;
+
+enum AuctionMode {
+    BLIND,
+    BLINE_RACING,
+    RACING
+}
+
+enum AuctionStatus {
+    PROCESSING,
+    CANCELLED,
+    COOLING_OFF_PEROID,
+    ACTIVE,
+    AWARDED,
+    WITHDRAWN,
+    COMPLETE,
+    COOLING_OFFED,
+    EXPIRED,
+    ABANDONMENT,
+    SUBSPENDED_BY_AUDITOR,
+    SUBSPENDED_BY_WARRANTER,
+    SUBSPENDED_BY_AUTHORITY
+}

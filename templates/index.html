@@ -1,0 +1,155 @@
+{% extends './base/base.html' %}
+
+
+{% block content %} 
+<div class="container-fluid !direction !spacing px-5">
+  <!-- Node Detail -->
+  <div class="row px-5 pt-5 pb-3">
+    <div class="col-12">
+      <div class="h3">Node Detail</div>
+    </div>
+    <div class="col-8 pe-3">
+      <div class="row bd-bottom">
+        <div class="col-6 h6">NODE ADDRESS:</div>
+        <div class="col-6 h6">CSCF323</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">INTERVAL:</div>
+        <div class="col-6 h6">
+          1800S &#60; <span class="emphasize">interval</span> &#60; 43,200S
+        </div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">CURRENT SYNC:</div>
+        <div class="col-6 h6">GTM 2023-06-22 18:00:00</div>
+      </div>
+
+      <div class="row bd-bottom">
+        <div class="col-6 h6">COIN MINED:</div>
+        <div class="col-6 h6">12</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">BLOCK CONFIRMED:</div>
+        <div class="col-6 h6">12</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">CHAIN LEN:</div>
+        <div class="col-6 h6">32</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">LATEST CONFIRMED:</div>
+        <div class="col-6 h6">#288</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">NEXT BLOCK:</div>
+        <div class="col-6 h6">#301</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">LINKED NODE:</div>
+        <div class="col-6 h6">ACSCAF, aCFQECQ, aACFS13</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">NEXT MINE:</div>
+        <div class="col-6 h6">GTM 2023-06-22 18:01:30</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">NEXT CHAIN SYNC:</div>
+        <div class="col-6 h6">GTM 2023-06-22 20:00:00</div>
+      </div>
+      <div class="row bd-bottom">
+        <div class="col-6 h6">MEMPOOLS SYNC:</div>
+        <div class="col-6 h6">EVERY 30S</div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="progress-bar float-end" role="progressbar" style="--start: 0; --end: 600"></div>
+    </div>
+  </div>
+
+  <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|} d-flex p-5">
+    <div class="col">
+      <table class="table">
+        <div class="h3">Mempools</div>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">FROM</th>
+            <th scope="col">TO</th>
+            <th scope="col">AMOUNT</th>
+            <th scope="col">FEE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row p-5">
+    <div class="col-12">
+      <div class="h3">Currency Detail</div>
+    </div>
+    <div class="row bd-bottom">
+      <div class="col-6 h6">ACTIVE CIRCULATION:</div>
+      <div class="col-6 h6">30 Coins</div>
+    </div>
+    <div class="row bd-bottom">
+      <div class="col-6 h6">NODE COUNT:</div>
+      <div class="col-6 h6">3</div>
+    </div>
+  </div>
+  <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|} d-flex px-5 pb-5">
+    <div class="col">
+      <table class="table">
+        <div class="h3">Blocks</div>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">FROM</th>
+            <th scope="col">TO</th>
+            <th scope="col">AMOUNT</th>
+            <th scope="col">FEE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

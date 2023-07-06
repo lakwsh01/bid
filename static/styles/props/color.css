@@ -1,0 +1,5 @@
+@property --skyblue {
+  syntax: '<color>';
+  initial-value: rgb(144, 196, 244);
+  inherits: false;
+}
